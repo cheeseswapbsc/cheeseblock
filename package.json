@@ -1,5 +1,5 @@
 {
-  "name": "cheeseblock",
+  "name": "cheesebscblock",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
