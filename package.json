@@ -1,10 +1,12 @@
 {
   "name": "cheesebscblock",
   "license": "UNLICENSED",
+  "version": "2.1.2",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blockartist/cheeseblock",
+    "deploy": "graph deploy --studio cheesebscblock",
+    "deploy-hosted": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blockartist/cheeseblock",
     "create-local": "graph create --node http://localhost:8020/ blockartist/bsc-blocks1",
     "remove-local": "graph remove --node http://localhost:8020/ blockartist/bsc-blocks1",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 blockartist/bsc-blocks1",
@@ -14,8 +16,15 @@
     "deploy-ropsten": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/ropsten-blocks",
     "deploy-poa": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ blocklytics/poa-core-blocks"
   },
-  "dependencies": {
-    "@graphprotocol/graph-cli": "^0.17.1",
-    "@graphprotocol/graph-ts": "0.17.0"
-  }
+  "devDependencies": {
+    "@graphprotocol/graph-cli": "^0.69.0",
+    "@graphprotocol/graph-ts": "^0.35.0"
+  },
+  "resolutions": {
+    "glob": "7.2.3",
+    "libp2p-crypto-secp256k1": "0.3.1",
+    "multihashing-async": "0.5.1",
+    "concat-stream": "^1.6.2"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
