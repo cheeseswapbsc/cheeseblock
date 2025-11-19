@@ -1,7 +1,7 @@
 {
-  "name": "cheesebscblock",
+  "name": "cheeseblock",
   "license": "UNLICENSED",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
